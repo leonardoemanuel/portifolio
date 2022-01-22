@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulos';
+    src: url(fonts/typewcond_regular.otf) format('opentype');
+}
+:root{
+    --font1:'titulos';
+    --font2:'texto';
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font1);
+    
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-width: 0px 0px 1px 0px ;
+    border-style: solid;
+    border-color: black;
+}
+header h1{
+    font-family: var(--font1);
+    font-size: 2.5em;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    
+}
+header > ul > li > a > img{
+    width: 40px;
+    margin-left: 5px;
+    padding: 8px;
+}
+/*main*/
+main h2{
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 2em;
+    padding: 20px;
+}
+/*section apresentação*/
+.apresentaçao{
+        display: flex;
+        text-align: center;
+        margin: auto;
+        max-width: 800px;
+        align-items: center;
+        border-width: 1px 0px 1px 0px ;
+        border-style: solid;
+        justify-content: space-around;
+}
+.apresentaçao img{
+    width: 200px;
+    height: 200px;
+    
+}
+.apresentaçao p{
+    font-family: var(--font1);
+    font-size: 1.3em;
+    text-align: justify;
+    text-indent: 20px;
+}
+/*section habilidades*/
+.habilidades{
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+    align-items: center;
+    
+    justify-content: space-around;
+    background-color: #d4d3d3;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+}
+/*section produto*/
+.projetos{
+    padding: 10px;
+    background-position: right center;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    max-width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 15px auto 0px auto;
+    
+    
+}
+.projetos p{
+    padding: 20px 0px;
+    width:45%;
+    font-size: 1.3em;
+}
+.projetos a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: forestgreen;
+}
+.projetos h3{
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 45%;
+}
+#projeto01{
+    background-image: url(imagens/sitecardapio.png);
+}
+#projeto02{
+    background-image: url(imagens/paginalogin.png);
+}
+#projeto03{
+    background-image: url(imagens/cordel.png);
+}
+/*footer*/
+footer{
+    padding: 5px;
+    text-align: center;
+    background-color: #d4d3d3;
+    color: white;
+    margin-top: 10px;
+}
+footer img{
+    width: 30px ;
+}
+p#email{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}

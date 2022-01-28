@@ -118,6 +118,9 @@ main h2{
 #projeto03{
     background-image: url(imagens/cordel.png);
 }
+#projeto04{
+    background-image: url(imagens/baralho.png);
+}
 /*footer*/
 footer{
     padding: 5px;

@@ -6,27 +6,61 @@
 :root{
     --font1:'titulos';
     --font2:'texto';
+    --cor1:#192231;
+    --cor2:#3fdebc;
 }
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
     font-family: var(--font1);
     
+}
+body{
+    background-color: var(--cor1);
 }
 /*cabeçalho*/
 header{
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    padding: 1rem;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    border-width: 0px 0px 1px 0px ;
-    border-style: solid;
-    border-color: black;
+    background-color:var(--cor1) ;
+
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+   
+   
 }
+/*divs do header*/
+header div{
+   flex: 1;
+}
+header div:nth-child(2)>ul{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+header div:last-child{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+header div:last-child img{
+    width: 30px;
+    margin: 0px 5px;
+    
+    
+}
+/*----*/
 header h1{
     font-family: var(--font1);
-    font-size: 2.5em;
+    font-size: 2em;
+    color:#3fdebc;
+    
 }
 header ul{
     list-style: none;
@@ -34,98 +68,117 @@ header ul{
     text-align: center;
     
 }
-header > ul > li > a > img{
-    width: 40px;
-    margin-left: 5px;
-    padding: 8px;
+header a{
+    text-decoration:none;
+    color:#3fdebc;
+    font-weight: bolder;
+    font-size: 1.5em;
 }
+
 /*main*/
 main h2{
     text-align: center;
     font-family: var(--font1);
     font-size: 2em;
     padding: 20px;
+    width: 100%;
+    color: var(--cor2);
+   
+   
 }
 /*section apresentação*/
 .apresentaçao{
-        display: flex;
-        text-align: center;
-        margin: auto;
-        max-width: 800px;
-        align-items: center;
-        border-width: 1px 0px 1px 0px ;
-        border-style: solid;
-        justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    height:aula;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: var(--cor1);
+    
+}
+.apresentaçao div{
+    width: 40rem;
+    height: 25rem;
+    background-image: url("imagens/pc.png");
+    background-size: 100% 100%;
+    
 }
 .apresentaçao img{
-    width: 200px;
-    height: 200px;
+    max-width: 45vw;
+    max-height: 45vh;
     
 }
 .apresentaçao p{
     font-family: var(--font1);
-    font-size: 1.3em;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
     text-align: justify;
+    line-height: 1.5rem;
     text-indent: 20px;
+    width: 100%;
+    height: 100%;
+    padding:2vh  2vw;
+    
 }
+
 /*section habilidades*/
-.habilidades{
-    padding: 20px;
-    display: flex;
-    margin: auto;
-    max-width: 800px;
-    align-items: center;
-    
-    justify-content: space-around;
-    background-color: #d4d3d3;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
-}
+
 /*section produto*/
+.produto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 0px;
+}
 .projetos{
+    width: 28rem;
+    height: 18rem;
+    border-radius:10px;
+    background-color: var(--cor1);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 3px 3px 3px 2px #00000048;
+   
+}
+.divProjetos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 10px;
-    background-position: right center;
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    max-width: 600px;
-    height: 300px;
-    border: 1px solid black;
-    margin: 15px auto 0px auto;
-    
-    
+    width: 45%;
 }
 .projetos p{
-    padding: 20px 0px;
-    width:45%;
+    padding:5px;
     font-size: 1.3em;
+    background-color:white;
+    
 }
 .projetos a{
     text-decoration: none;
-    padding: 10px;
+    text-align: center;
+    margin: auto;
+    padding:5px;
+    width: 45%;
     color: white;
+    font-size: 1.3em;
     background-color: forestgreen;
 }
 .projetos h3{
     font-size: 1.5em;
     font-weight: bolder;
-    width: 45%;
+    background-color: white;
+    text-align: center;
+    
 }
-#projeto01{
-    background-image: url(imagens/sitecardapio.png);
-}
-#projeto02{
-    background-image: url(imagens/paginalogin.png);
-}
-#projeto03{
-    background-image: url(imagens/cordel.png);
-}
-#projeto04{
-    background-image: url(imagens/baralho.png);
-}
+
 /*footer*/
 footer{
     padding: 5px;
     text-align: center;
-    background-color: #d4d3d3;
+    background-color:var(--cor1) ;
     color: white;
     margin-top: 10px;
 }

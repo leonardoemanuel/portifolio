@@ -27,7 +27,6 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color:var(--cor1) ;
-
     position: sticky;
     top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.322);
@@ -37,12 +36,6 @@ header{
 /*divs do header*/
 header div{
    flex: 1;
-}
-header div:nth-child(2)>ul{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    text-align: center;
 }
 header div:last-child{
     display: flex;
@@ -98,13 +91,6 @@ main h2{
     background-color: var(--cor1);
     
 }
-.apresentaçao div{
-    width: 40rem;
-    height: 25rem;
-    background-image: url("imagens/pc.png");
-    background-size: 100% 100%;
-    
-}
 .apresentaçao img{
     max-width: 45vw;
     max-height: 45vh;
@@ -112,7 +98,7 @@ main h2{
 }
 .apresentaçao p{
     font-family: var(--font1);
-    color: black;
+    color: white;
     font-size: 1.5em;
     font-weight: bolder;
     text-align: justify;
@@ -125,7 +111,28 @@ main h2{
 }
 
 /*section habilidades*/
-
+article.habilidades{
+    box-sizing: border-box;
+    background-color: #3fdebc;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+.habilidades h2{
+    color: black;
+    width: 100%;
+   
+    
+}
+aside{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+aside img{
+    width: 4rem;
+}
 /*section produto*/
 .produto{
     display: flex;
@@ -139,13 +146,15 @@ main h2{
     height: 18rem;
     border-radius:10px;
     background-color: var(--cor1);
-    border: 1px solid rgba(0, 0, 0, 0.185);
+    border: 1px solid #0000002f;
     box-shadow: 3px 3px 3px 2px #00000048;
    
 }
 .divProjetos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     padding: 10px;
     width: 45%;
@@ -164,13 +173,15 @@ main h2{
     width: 45%;
     color: white;
     font-size: 1.3em;
-    background-color: forestgreen;
+    
 }
 .projetos h3{
     font-size: 1.5em;
     font-weight: bolder;
     background-color: white;
     text-align: center;
+    border-radius:10px 10px 0 0 ;
+
     
 }
 

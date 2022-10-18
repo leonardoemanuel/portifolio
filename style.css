@@ -144,36 +144,34 @@ aside img{
 .projetos{
     width: 28rem;
     height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius:10px;
     background-color: var(--cor1);
     border: 1px solid #0000002f;
     box-shadow: 3px 3px 3px 2px #00000048;
+    box-sizing: border-box;
    
 }
-.divProjetos{
+.projetos a.link{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 10px;
-    width: 45%;
+    width: 100%;
+    height: 10%;
+    text-decoration:none ;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: white;
+    border-radius:10px 10px 0 0 ;
 }
-.projetos p{
-    padding:5px;
-    font-size: 1.3em;
-    background-color:white;
-    
-}
-.projetos a{
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    padding:5px;
-    width: 45%;
+.projetos a:hover{
+    background-color: green;
     color: white;
-    font-size: 1.3em;
-    
+    cursor: pointer;
+    border-radius:0px 0px 10px 10px ;
 }
 .projetos h3{
     font-size: 1.5em;
@@ -181,23 +179,25 @@ aside img{
     background-color: white;
     text-align: center;
     border-radius:10px 10px 0 0 ;
-
-    
+}
+.projetos a img{
+    width: 100%;
+    height: 100%;
+    border-radius:0px 0px 10px 10px ;
 }
 
 /*footer*/
 footer{
-    padding: 5px;
     text-align: center;
     background-color:var(--cor1) ;
     color: white;
     margin-top: 10px;
 }
-footer img{
-    width: 30px ;
+footer p{
+    text-align: center;
 }
-p#email{
+address{
     display: flex;
-    align-items: center;
-    padding: 10px;
+    padding: 4px;
+    
 }

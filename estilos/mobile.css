@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'titulos';
-    src: url(/fonts/typewcond_regular.otf) format('opentype');
+    src: url(../typewcond_regular.otf) format('opentype');
 }
 :root{
     --font1:'titulos';

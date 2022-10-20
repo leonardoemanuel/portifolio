@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulos';
+    src: url(/fonts/typewcond_regular.otf) format('opentype');
+}
+:root{
+    --font1:'titulos';
+    --font2:'texto';
+    --cor1:#192231;
+    --cor2:#3fdebc;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font1);
+    
+}
+body{
+    background-color: var(--cor1);
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:var(--cor1) ;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+   
+   
+}
+/*divs do header*/
+header div{
+   flex: 1;
+}
+header div:last-child{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+header div:last-child img{
+    width: 30px;
+    margin: 0px 5px;
+    
+    
+}
+/*----*/
+header h1{
+    font-family: var(--font1);
+    font-size: 1.5em;
+    color:#3fdebc;
+    
+}
+header ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    
+}
+
+
+/*main*/
+main h2{
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 1.8em;
+    width: 100%;
+    color: var(--cor2);
+    margin: 2rem 0;
+}
+/*section apresentação*/
+.apresentaçao{
+    display: flex;
+    flex-wrap: wrap;
+    height:aula;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: var(--cor1);
+    
+}
+.apresentaçao img{
+    width: 12rem;
+    height: 12rem;
+    
+}
+.apresentaçao p{
+    font-family: var(--font1);
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 1.5rem;
+    text-indent: 20px;
+    width: 100%;
+    height: 100%;
+    padding:2vh  2vw;
+    
+}
+
+/*section habilidades*/
+article.habilidades{
+    background-color: #3fdebc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.habilidades h2{
+    color: black;
+    width: 100%;
+    margin:0 0 1rem 0;
+}
+aside{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+aside img{
+    width: 3rem;
+}
+/*section produto*/
+.produto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 0px;
+}
+.projetos{
+    width: 28rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:10px;
+    background-color: var(--cor1);
+    border: 1px solid #0000002f;
+    box-shadow: 3px 3px 3px 2px #00000048;
+    box-sizing: border-box;
+   
+}
+.projetos a.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    text-decoration:none ;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: white;
+    border-radius:10px 10px 0 0 ;
+}
+.projetos a:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius:10px 10px 0 0 ;
+}
+.projetos h3{
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: white;
+    text-align: center;
+    border-radius:10px 10px 0 0 ;
+}
+.projetos a img{
+    width: 100%;
+    height: 100%;
+    border-radius:0px 0px 10px 10px ;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    background-color:var(--cor1) ;
+    color: white;
+    margin-top: 10px;
+}
+footer p{
+    text-align: center;
+}
+address{
+    display: flex;
+    padding: 4px;
+    
+}
